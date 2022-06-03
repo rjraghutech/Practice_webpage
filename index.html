@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/844985f32c.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            /* max-width: 1080px; */
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(79, 156, 156);
+            padding: 15px;
+        }
+
+        .brand {
+            font-weight: bolder;
+        }
+
+        .centerhead a {
+            text-decoration: none;
+            padding: 0px 4px;
+            font-weight: bold;
+        }
+
+        .home {
+            color: white;
+            border-bottom: 2px solid purple;
+        }
+
+        .about,
+        .service {
+            color: purple;
+        }
+
+        .righthead a {
+            text-decoration: none;
+            background-color: white;
+            border-radius: 5px;
+            padding: 2px 8px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .maincontainer {
+            background-color: rgb(224, 224, 224);
+            display: block;
+
+        }
+
+        .insidecont {
+            display: flex;
+        }
+
+        .heading h2 {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .left1,
+        .center1,
+        .right1 {
+            border: 2px solid red;
+            height: 350px;
+            width: 350px;
+            margin: auto;
+            float: left;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 10px auto;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .sidekick {
+            background-color: blueviolet;
+        }
+
+        .hero {
+            background-color: orange;
+        }
+
+        #hero2 {
+            float: left;
+            clear: both;
+            margin-left: 5px;
+        }
+
+        #hero3 {
+            float: right;
+            clear: both;
+            margin-right: 5px;
+        }
+
+        .maincontainer2 {
+            background-color: pink;
+            /* display: block; */
+            /* padding: 25px auto; */
+        }
+
+        hr{
+            width: 1000px;
+        }
+        .left2,
+        .center2,
+        .right2 ,.extra{
+            border: 2px solid red;
+            height: 350px;
+            width: 350px;
+            margin: auto;
+        }
+        .extra{
+            margin-top: 35px;
+        }
+        .insidecont2 {
+            display: flex;
+        }
+        #hero22{
+            position: relative;
+            top: 60px;
+            left: 60px
+        }
+        .relative{
+            position: relative;
+        }
+        #hero32{
+            position: absolute;
+            top: 115px;
+            left: 35px;
+        }
+        .extra{
+            height: 400px;
+            overflow: scroll;
+        }
+        .extra p{
+            font-size: small;
+            position: relative;
+            height: 100px;
+            width: 100%;
+        }
+        .maincontainer3{
+            background-color: rgb(216, 214, 214);
+        }
+        .insidecont3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box1{
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 10px;
+            /* text-align: center; */
+            font-weight: 800;
+            background-color: red;
+        }
+        .maincontainer4{
+            background-color: pink;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .insidecont4{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 200px;
+        }
+        
+        .new22{
+            display: flex;
+            justify-content: center;
+        }
+        .maincontainer5{
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        #inbox3{
+            width: 35%;
+        }
+        .maincont6{
+            background-color: pink;
+            padding-top: 25px;
+        }
+        .inside6{
+            display: flex;
+            /* width: ; */
+            justify-content: center;
+        }
+        .inside7{
+            display: flex;
+            justify-content: center;
+        }
+        .navup{
+            display: flex;
+            justify-content: end;
+        }
+        .navup a i{
+            color: black;
+            font-size: 50px;
+        }
+        .foot{
+            background-color: rgb(79, 156, 156);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .foot i{
+            padding-left: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="lefthead">
+                <h1 class="brand">POSITION</h1>
+            </div>
+            <div class="centerhead">
+                <a href="#" class="home">Home</a>
+                <a href="#" class="about">About</a>
+                <a href="#" class="service">Service</a>
+            </div>
+            <div class="righthead">
+                <a href="#">Login</a>
+                <a href="#">Signup</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="maincontainer">
+            <div class="heading">
+                <h2>Positioning Element Using Floats</h2>
+            </div>
+            <div class="insidecont">
+                <div class="left1">
+                    <div class="box sidekick">sidekick</div>
+                    <div class="box hero" id="hero1">hero</div>
+                    <div class="box sidekick">sidekick</div>
+                </div>
+                <div class="center1">
+                    <div class="box sidekick">sidekick</div>
+                    <div class="box hero" id="hero2">hero</div>
+                    <div class="box sidekick">sidekick</div>
+                </div>
+                <div class="right1">
+                    <div class="box sidekick">sidekick</div>
+                    <div class="box hero" id="hero3">hero</div>
+                    <div class="box sidekick">sidekick</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Uniquely positioning content -->
+        <div class="maincontainer2">
+            <div class="maincont2">
+                <div class="heading">
+                    <h2>Positioning Element Using Floats</h2>
+                </div>
+                <div class="insidecont2">
+                    <div class="left2">
+                        <div class="box sidekick">sidekick</div>
+                        <div class="box hero" id="hero12">hero</div>
+                        <div class="box sidekick">sidekick</div>
+                    </div>
+                    <div class="center2">
+                        <div class="box sidekick">sidekick</div>
+                        <div class="box hero" id="hero22">hero</div>
+                        <div class="box sidekick">sidekick</div>
+                    </div>
+                    <div class="right2 relative">
+                        <div class="box sidekick">sidekick</div>
+                        <div class="box hero" id="hero32">hero</div>
+                        <div class="box sidekick">sidekick</div>
+                    </div>
+                </div>
+            </div>
+                <div class="extra">
+                    <div class="box sidekick">sidekick</div>
+                    <div class="box hero" id="hero34">hero</div>
+                    <div class="box sidekick">sidekick</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsa quasi error debitis unde, nostrum minima sequi consequatur qui tempora, dolor consequuntur aliquam quaerat! Pariatur voluptatibus sequi ullam, ipsum inventore quia laborum voluptates fugiat! Deleniti soluta, expedita, consequuntur harum, ipsam voluptate dolorum corrupti possimus autem impedit nam reprehenderit reiciendis esse.</p>
+                </div>
+        </div>
+        <div class="maincontainer3">
+            <div class="heading">
+                <h2>Positioning using flex</h2>
+            </div>
+            <div class="insidecont3">
+                <div class="box1">1</div>
+                <div class="box1">2</div>
+                <div class="box1">3</div>
+                <div class="box1">4</div>
+                <div class="box1">5</div>
+            </div>
+        </div>
+        <hr>
+        <div class="maincontainer4">
+            <div class="insidecont4">
+                <div class="box1">1</div>
+                <div class="box1">2</div>
+                <div class="box1">3</div>
+                <div class="box1">4</div>
+                <div class="box1">5</div>
+                <div class="box1">6</div>
+                <div class="box1">7</div>
+                <div class="box1">8</div>
+                <div class="box1">9</div>
+                <div class="box1">10</div>
+                <div class="box1">11</div>
+                <div class="box1">12</div>
+                <div class="box1">13</div>
+                <div class="box1">14</div>
+                <div class="box1">15</div>
+                <div class="box1">16</div>
+                <div class="box1">17</div>
+                <div class="box1">18</div>
+                <div class="box1">19</div>
+                <div class="box1">20</div>
+                <div class="box1">21</div>
+            </div>
+                <div class="new22">
+                    <div class="box1" id="box22">22</div>
+                </div>
+        </div>
+        <hr>
+        <div class="maincontainer5">
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+            <div class="box1" id="inbox3">3</div>
+            <div class="box1">4</div>
+            <div class="box1">5</div>
+        </div>
+        <hr>
+        <div class="maincont6">
+            <div class="inside6">
+                <div class="box1">1</div>
+                <div class="box1">2</div>
+                <div class="box1">3</div>
+                <div class="box1">4</div>
+                <div class="box1">5</div>
+            </div>
+            <div class="inside7">
+                <div class="box1" id="newboxsix">6</div>
+            </div>
+            <div class="navup">
+                <a href="#"><i class="fa fa-arrow-circle-o-up"></i></a>
+             </div>
+        </div>
+       
+    </main>
+    <footer>
+        <div class="foot">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+</body>
+
+</html>
